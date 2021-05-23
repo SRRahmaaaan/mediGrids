@@ -1,0 +1,307 @@
+@media screen and (max-width: 1250px) {
+  .appointment .grid,
+  .achievements .grid,
+  .services .grid,
+  .team .grid,
+  .contact .middle {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .appointment .grid p {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about .grid,
+  .departments .tab-wrap .tab-content .grid {
+    grid-template-columns: 1fr;
+  }
+  .departments,
+  .testimonials .section-head::before {
+    display: none;
+  }
+  .achievements {
+    margin: 0;
+  }
+  .achievements .box {
+    margin-bottom: 1.5rem;
+  }
+  .services {
+    padding: 4rem 1rem;
+  }
+  .team .w-50,
+  .blog .card .w-50 {
+    width: 100%;
+  }
+  .blog .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .blog .card {
+    height: 600px;
+    flex-direction: column;
+  }
+  .blog .span .content {
+    padding: 1.5rem 0.5rem 1.5rem 1.2rem;
+  }
+  .contact .container .top {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+  .contact .middle .box {
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+  }
+  .contact hr {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header .navbar {
+    top: 0;
+  }
+  header .navbar nav {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 60%;
+    min-height: 55vh;
+    background-color: var(--info-color);
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+    padding-bottom: 1rem;
+  }
+  .navbar nav ul li {
+    display: block;
+    margin-top: 2rem;
+  }
+  .navbar nav ul li a {
+    font-size: 1.2rem;
+  }
+  .navbar nav ul li a::after {
+    bottom: -10px;
+  }
+  #bars {
+    height: 40px;
+    width: 50px;
+    padding-top: 5px;
+  }
+  #bars .bar {
+    height: 3px;
+    width: 100%;
+    display: block;
+    background-color: var(--info-color);
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  #checkbox:checked ~ nav {
+    top: 100px;
+  }
+  #checkbox:checked ~ #bars > .bar {
+    background-color: red;
+  }
+  #checkbox:checked ~ #bars > #bar-2 {
+    opacity: 0;
+  }
+  #checkbox:checked ~ #bars > #bar-1 {
+    transform: rotate(135deg);
+  }
+  #checkbox:checked ~ #bars > #bar-3 {
+    transform: rotate(-135deg);
+    margin-top: -25px;
+  }
+  .banner .slider .slide .left,
+  .testimonials .w-50 {
+    width: 75%;
+  }
+  .banner .slider .slide .right {
+    display: none;
+  }
+  .pricing .grid,
+  .testimonials .slider .slide .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonials .slider .slide .grid .box {
+    margin-bottom: 5.5rem;
+  }
+  .features .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 12px;
+  }
+  .section-head::before,
+  header::before,
+  header::after,
+  .navbar button {
+    display: none;
+  }
+  .container {
+    padding: 0;
+  }
+  header .navbar .flex,
+  .contact {
+    padding: 0 1rem;
+  }
+  .banner .slider .slide .left,
+  .appointment .w-50,
+  .departments .w-50,
+  .testimonials .w-50,
+  .blog .w-50 {
+    width: 100%;
+  }
+  .appointment .grid,
+  .pricing .grid,
+  .testimonials .slider .slide .grid,
+  .contact .middle {
+    grid-template-columns: 1fr;
+  }
+  h1 {
+    font-size: 1.8rem !important;
+  }
+  .departments .tab-wrap .tab-content .grid .content .points p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .services .w-50,
+  .portfolios .w-50,
+  .pricing .w-50 {
+    width: 75%;
+  }
+  .portfolios label {
+    display: inline-block;
+    margin: 0.5rem;
+  }
+  .testimonials .container .slider .slide .box {
+    text-align: left;
+  }
+  .testimonials .container .slider .slide .box img,
+  .testimonials .container .slider .slide .box .addresses {
+    left: 0 !important;
+  }
+  .team .card .identity {
+    padding: 0.5rem;
+  }
+  .team .card .identity > :last-child {
+    margin-top: 0px;
+  }
+  .contact {
+    padding: 3rem 1rem;
+  }
+  .contact .container .top .right input {
+    width: 100%;
+  }
+  .contact .container .top .right button {
+    margin-top: 1rem;
+    display: block;
+  }
+}
+@media screen and (max-width: 500px) {
+  section,
+  .features .box {
+    padding: 1rem;
+  }
+  .banner .slider .slide .left {
+    text-align: center;
+  }
+  .banner .slider .slide .left button {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .banner .slider .slide .left h1 {
+    font-size: 1.8rem;
+  }
+  .services .grid,
+  .team .grid {
+    grid-template-columns: 1fr;
+  }
+  .testimonials,
+  .team {
+    padding: 3rem 1rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .navbar .container {
+    padding: 0 10px;
+  }
+  h1{
+    font-size: 1.5rem !important;
+  }
+  .achievements .grid,
+  .contact .middle .second .grid {
+    grid-template-columns: 1fr;
+  }
+  .portfolios .boxes .box {
+    display: block;
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+  .services .w-50,
+  .portfolios .w-50,
+  .pricing .w-50 {
+    width: 100%;
+  }
+  .features h2 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .banner {
+    padding: 2rem 1rem 0 1rem;
+  }
+  .about h1,
+  .team h1,
+  .contact .container .top h4 {
+    font-size: 1.2rem;
+  }
+  .services .box::before,
+  .services .box::after {
+    display: none;
+  }
+  .services .box,
+  .services .box i,
+  .pricing .card {
+    padding: 1rem;
+  }
+  .portfolios label {
+    display: block;
+  }
+}
+@media screen and (max-width: 280px) {
+  p {
+    font-size: 10px;
+    line-height: 1rem;
+  }
+  .navbar img {
+    width: 150px;
+  }
+  .banner .slider .slide .left h1,
+  .departments h1,
+  .services h1 {
+    font-size: 1.3rem;
+  }
+  .banner .container .slider .slide button,
+  .pricing .card button {
+    padding: 1rem;
+  }
+  .appointment .grid p {
+    padding: 1rem 0.2rem;
+  }
+  .testimonials .container .slider .slide .box .addresses > :first-child {
+    margin-bottom: 10px;
+  }
+  .team .card .social {
+    padding: 0.8rem 0;
+  }
+  .blog .card .content h4,
+  .blog .span .content h4 {
+    font-size: 0.9rem;
+  }
+  .blog .card .content .author,
+  .blog .span .content .author {
+    flex-direction: column;
+    align-items: center;
+  }
+}
